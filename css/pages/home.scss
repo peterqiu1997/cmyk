@@ -1,6 +1,4 @@
 .section--home {
-  height: 100vh;
-
   .title__wrapper {
     width: 80%;
     overflow: hidden;
@@ -66,6 +64,10 @@
         &:hover {
           color: $c__black;
         }
+      }
+
+      &:hover {
+        cursor: pointer;
       }
 
       @media (max-width: 610px) {
