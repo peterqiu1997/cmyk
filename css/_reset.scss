@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  position: relative;
+  padding: 0;
+  background: none;
+}
+
+body {
+  box-sizing: border-box;
+}
+

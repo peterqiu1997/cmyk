@@ -1,0 +1,28 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin undo-vertical-align {
+  position: relative;
+  top: 0px;
+  transform: none;
+}
+
+@mixin clearfix() {
+  & {
+    *zoom: 1;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
