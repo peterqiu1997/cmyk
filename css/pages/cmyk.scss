@@ -1,0 +1,120 @@
+.background__color {
+  background: none;
+  transition: background 250ms;
+
+  &--cyan {
+    background: $c__blue;
+  }
+
+  &--magenta {
+    background: $c__magenta;
+  }
+
+  &--yellow {
+    background: $c__yellow;
+  }
+
+  &--black {
+    background: $c__black;
+  }
+}
+
+.section__text--light {
+  color: white;
+}
+
+.section--home {
+  height: 100vh;
+
+  .title__wrapper {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img.cmyk--horizontal {
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 755px) {
+        display: none;
+      }
+    }
+
+    img.cmyk--square {
+      height: 100%;
+      width: 100%;
+      display: none;
+
+      @media (max-width: 755px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.section--about {
+  .speaker {
+
+  }
+}
+
+.section--schedule {
+  .event {
+    padding: 24px 0;
+
+    .event__time {
+      font-size: 1.25em;
+      vertical-align: top;
+      display: inline-block;
+      width: 25%;
+      margin-right: 5%;
+      text-align: right;
+
+      @media (max-width: 800px) {
+        text-align: center;
+        margin-right: 0;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .event__description {
+      display: inline-block;
+      width: 70%;
+
+      .event__title {
+        font-size: 1.25em;
+      }
+
+      @media (max-width: 800px) {
+        margin: 1.75rem 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section--registration {
+  text-align: center;
+  height: 100vh;
+
+  a {
+    color: $c__blue;
+    text-decoration: none;
+    transition: color 250ms;
+
+    &:hover {
+      color: $c__magenta;
+    }
+  }
+}
+
+.section--competition {
+  height: 100vh;
+  text-align: center;
+}

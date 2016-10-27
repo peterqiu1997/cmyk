@@ -56,7 +56,7 @@ export default class Html extends Component {
             href={ prefixLink('/img/cmyk-square.png') }
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Lato"
+            href="https://fonts.googleapis.com/css?family=Lato:400,700,900"
             rel="stylesheet"
           />
           {head.title.toComponent()}
