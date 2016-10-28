@@ -231,4 +231,21 @@
 .section--competition {
   height: 100vh;
   text-align: center;
+
+  .logo {
+    padding-top: 5%;
+    height: 130px;
+
+    img {
+      height: 100%;
+    }
+
+    @media (max-width: 645px) {
+      height: 100px;
+    }
+
+    @media (max-width: 540px) {
+      height: 80px;
+    }
+  }
 }

@@ -362,6 +362,12 @@ export default class Index extends React.Component {
           </div>
           <div className="section--sub">
             The prompt will be released here at the event!  See you there!
+
+            <a href="http://innovativedesign.club">
+              <div className="logo">
+                <img src={ prefixLink('/img/innod.png') }/>
+              </div>
+            </a>
           </div>
         </Element>
       </div>
