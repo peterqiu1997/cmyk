@@ -301,7 +301,7 @@ export default class Index extends React.Component {
             what is cmyk?
           </div>
           <div className="section--sub">
-            <b className="cyan">C</b>ome <b className="magenta">M</b>ake <b className="yellow">Y</b>our mar<b className="black">K</b> at Innovative Design's 5th annual CMYK Designathon!
+            <b>C</b>ome <b>M</b>ake <b>Y</b>our mar<b>K</b> at Innovative Design's 5th annual CMYK Designathon!
 
             Join us on Saturday, November 5th for a day of learning and
             exciting competition with peers and professional designers, where you
