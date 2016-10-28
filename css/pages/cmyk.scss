@@ -1,0 +1,251 @@
+.background__color {
+  background: none;
+  transition: background 250ms;
+
+  &--cyan {
+    background: $c__blue;
+  }
+
+  &--magenta {
+    background: $c__magenta;
+  }
+
+  &--yellow {
+    background: $c__yellow;
+  }
+
+  &--black {
+    background: $c__black;
+  }
+}
+
+.section__text--light {
+  color: white;
+}
+
+.section--home {
+  height: 100vh;
+
+  .title__wrapper {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img.cmyk--horizontal {
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 755px) {
+        display: none;
+      }
+    }
+
+    img.cmyk--square {
+      height: 100%;
+      width: 100%;
+      display: none;
+
+      @media (max-width: 755px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.section--about {
+  .section--sub {
+    text-align: center;
+
+    .speaker {
+      margin: 2%;
+      display: inline-block;
+
+      a.speaker__portfolio {
+        display: inline-block;
+        text-decoration: none;
+        height: 300px;
+        width: 300px;
+
+        .speaker__photo {
+          height: 300px;
+          width: 300px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .speaker__details {
+          position: absolute;
+          display: inline-block;
+          width: 300px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          padding: 0.2rem;
+          opacity: 0;
+          z-index: 2;
+          transition: opacity 250ms;
+
+          .speaker__details--name {
+            font-size: 1.75rem;
+          }
+
+          .speaker__details--title {
+            font-size: 1.25rem;
+            margin-top: 0.4rem;
+          }
+        }
+      }
+
+      &.speakerElem-0 {
+        a.speaker__portfolio {
+          color: $c__blue;
+        }
+      }
+
+      &.speakerElem-1 {
+        a.speaker__portfolio {
+          color: $c__magenta;
+        }
+      }
+
+      &.speakerElem-2 {
+        a.speaker__portfolio {
+          color: darken($c__yellow, 20%);
+        }
+      }
+
+      &.speakerElem-3 {
+        a.speaker__portfolio {
+          color: $c__black;
+        }
+      }
+
+      &.speakerElem-4 {
+        a.speaker__portfolio {
+          color: $c__blue;
+        }
+      }
+
+      &.speakerElem-5 {
+        a.speaker__portfolio {
+          color: $c__magenta;
+        }
+      }
+
+      &.speakerElem-6 {
+        a.speaker__portfolio {
+          color: darken($c__yellow, 20%);
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        height: 0;
+        background: white;
+        opacity: 0;
+        transition: all 400ms;
+      }
+
+      &:hover,
+      &:focus {
+        .speaker__portfolio {
+          .speaker__details {
+            opacity: 1;
+          }
+        }
+
+        &::after {
+          top: 0;
+          height: 300px;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+
+.section--schedule {
+  .event {
+    padding: 24px 0;
+
+    .event__time {
+      font-size: 1.25em;
+      vertical-align: top;
+      display: inline-block;
+      width: 25%;
+      margin-right: 5%;
+      text-align: right;
+
+      @media (max-width: 800px) {
+        text-align: center;
+        margin-right: 0;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .event__description {
+      display: inline-block;
+      width: 70%;
+
+      .event__title {
+        font-size: 1.25em;
+      }
+
+      @media (max-width: 800px) {
+        margin: 1.75rem 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section--registration {
+  text-align: center;
+  height: 100vh;
+
+  a {
+    color: $c__blue;
+    text-decoration: none;
+    transition: color 250ms;
+
+    &:hover {
+      color: $c__magenta;
+    }
+  }
+}
+
+.section--competition {
+  height: 100vh;
+  text-align: center;
+
+  .logo {
+    padding-top: 5%;
+    height: 130px;
+
+    img {
+      height: 100%;
+    }
+
+    @media (max-width: 645px) {
+      height: 100px;
+    }
+
+    @media (max-width: 540px) {
+      height: 80px;
+    }
+  }
+}
