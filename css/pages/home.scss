@@ -1,32 +1,4 @@
 .section--home {
-  .title__wrapper {
-    width: 80%;
-    overflow: hidden;
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-
-    img.cmyk--horizontal {
-      height: 100%;
-      width: 100%;
-
-      @media (max-width: 755px) {
-        display: none;
-      }
-    }
-
-    img.cmyk--square {
-      height: 100%;
-      width: 100%;
-      display: none;
-
-      @media (max-width: 755px) {
-        display: block;
-      }
-    }
-  }
-
   .navigation {
     position: absolute;
     bottom: 0;
