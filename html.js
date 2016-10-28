@@ -40,7 +40,7 @@ export default class Html extends Component {
           />
           <meta
             property="og:title"
-            content="CMYK Designation"
+            content="CMYK Designathon"
           />
           <meta
             property="og:type"
