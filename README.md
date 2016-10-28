@@ -1,1 +1,2 @@
-Site boilerplate using Gatsby, with a few modifications from default
+# CMYK Fall 2016
+Hosted by [Innovative Design](http://innovativedesign.club)
