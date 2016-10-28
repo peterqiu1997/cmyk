@@ -26,13 +26,13 @@ const speakers = [
     name: 'Benjamin Zweig',
     url: '/img/speakers/benjamin.jpg',
     portfolio: 'http://zweig.co/',
-    title: 'UX Design at Twitch'
+    title: 'Product Designer at Twitch'
   },
   {
     name: 'Travis Neilson',
     url: '/img/speakers/travis.jpeg',
     portfolio: 'http://travisneilson.com/',
-    title: 'Web Design Youtuber at Google'
+    title: 'Youtuber at DevTips & Interaction Designer at Google'
   },
   {
     name: 'Fiona Yeung',
