@@ -110,7 +110,7 @@ const speakerElements = _.map(speakers, (speaker, index) => {
     >
       <a
         className="speaker__portfolio"
-        href={ speaker.portfolio ? prefixLink(speaker.portfolio) : '' }
+        href={ speaker.portfolio }
       >
         <div
           className="speaker__photo"
