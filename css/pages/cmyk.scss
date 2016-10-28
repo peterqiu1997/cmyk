@@ -56,8 +56,122 @@
 }
 
 .section--about {
-  .speaker {
+  .section--sub {
+    text-align: center;
 
+    .speaker {
+      margin: 2%;
+      display: inline-block;
+
+      a.speaker__portfolio {
+        display: inline-block;
+        text-decoration: none;
+        height: 300px;
+        width: 300px;
+
+        .speaker__photo {
+          height: 300px;
+          width: 300px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .speaker__details {
+          position: absolute;
+          display: inline-block;
+          width: 300px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          padding: 0.2rem;
+          opacity: 0;
+          z-index: 2;
+          transition: opacity 250ms;
+
+          .speaker__details--name {
+            font-size: 1.75rem;
+          }
+
+          .speaker__details--title {
+            font-size: 1.25rem;
+            margin-top: 0.4rem;
+          }
+        }
+      }
+
+      &.speakerElem-0 {
+        a.speaker__portfolio {
+          color: $c__blue;
+        }
+      }
+
+      &.speakerElem-1 {
+        a.speaker__portfolio {
+          color: $c__magenta;
+        }
+      }
+
+      &.speakerElem-2 {
+        a.speaker__portfolio {
+          color: darken($c__yellow, 20%);
+        }
+      }
+
+      &.speakerElem-3 {
+        a.speaker__portfolio {
+          color: $c__black;
+        }
+      }
+
+      &.speakerElem-4 {
+        a.speaker__portfolio {
+          color: $c__blue;
+        }
+      }
+
+      &.speakerElem-5 {
+        a.speaker__portfolio {
+          color: $c__magenta;
+        }
+      }
+
+      &.speakerElem-6 {
+        a.speaker__portfolio {
+          color: darken($c__yellow, 20%);
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        height: 0;
+        background: white;
+        opacity: 0;
+        transition: all 400ms;
+      }
+
+      &:hover,
+      &:focus {
+        .speaker__portfolio {
+          .speaker__details {
+            opacity: 1;
+          }
+        }
+
+        &::after {
+          top: 0;
+          height: 300px;
+          opacity: 0.9;
+        }
+      }
+    }
   }
 }
 

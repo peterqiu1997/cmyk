@@ -49,6 +49,7 @@ const speakers = [
   {
     name: 'Anna Smalley',
     url: '/img/speakers/anna.jpg',
+    portfolio: '',
     title: 'Senior UX Director at Walmart Labs'
   }
 ];
@@ -105,19 +106,19 @@ const speakerElements = _.map(speakers, (speaker, index) => {
   return (
     <div
       key={ `speakerElem-${index}` }
-      className="speaker { speaker.name }"
+      className={ classNames('speaker', `speakerElem-${index}`) }
     >
       <a
         className="speaker__portfolio"
         href={ speaker.portfolio ? prefixLink(speaker.portfolio) : '' }
-        target="_blank"
       >
         <div
-          className="speaker__photo"
-          style={{
+          className="speaker__photo"
+          style={{
             backgroundImage: `url(${prefixLink(speaker.url)})`
           }}
-        ></div>
+        >
+        </div>
         <div className="speaker__details">
           <div className="speaker__details--name">
             { speaker.name }
@@ -360,7 +361,7 @@ export default class Index extends React.Component {
             competition
           </div>
           <div className="section--sub">
-            The prompt will be shown here at the event!
+            The prompt will be released here at the event!  See you there!
           </div>
         </Element>
       </div>
