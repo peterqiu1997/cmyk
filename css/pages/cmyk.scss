@@ -232,8 +232,25 @@
   height: 100vh;
   text-align: center;
 
-  .logo {
-    margin-top: 15%;
+  .gob--logo {
+    padding: 2%;
+    height: 250px;
+
+    img {
+      height: 100%;
+    }
+
+    @media (max-width: 645px) {
+      height: 200px;
+    }
+
+    @media (max-width: 540px) {
+      height: 120px;
+    }
+  }
+
+  .innod--logo {
+    margin-top: 20%;
     padding: 2%;
     height: 130px;
 

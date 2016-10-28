@@ -312,7 +312,7 @@ export default class Index extends React.Component {
 
             The event will be hosted at Berkeley's brand new Jacobs Hall for Design Innovation.
             Breakfast and lunch will be provided.  Get ready for a day of exploring and letting your
-            creativy run wild!
+            creativity run wild!
           </div>
           <div className="section__title--sub">
             who will be there?
@@ -344,7 +344,7 @@ export default class Index extends React.Component {
             registration
           </div>
           <div className="section--sub">
-            To register, <a href="https://www.eventbrite.com/e/cmyk-designathon-2016-tickets-2890728948" target="_blank">buy your tickets now!</a>  They will sell out, so act soon!
+            To register, <a href="https://www.eventbrite.com/e/cmyk-designathon-2016-tickets-28907289481" target="_blank">buy your tickets now!</a>  They will sell out, so act soon!
             <br/>
             Additionally, be sure to check out the <a href="https://www.facebook.com/events/1239658116091377/?notif_t=plan_user_associated&notif_id=1477593077272531">Facebook event</a> and click RSVP!
             <br/>
@@ -361,10 +361,13 @@ export default class Index extends React.Component {
             competition
           </div>
           <div className="section--sub">
+            <div className="gob--logo">
+              <img src={ prefixLink('/img/gob.png') }/>
+            </div>
             The prompt will be released here at the event!  See you there!
 
             <a href="http://innovativedesign.club">
-              <div className="logo">
+              <div className="innod--logo">
                 <img src={ prefixLink('/img/innod.png') }/>
               </div>
             </a>
