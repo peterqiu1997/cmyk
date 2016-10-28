@@ -10,17 +10,17 @@ const cyanImages = [
 ];
 
 const magentaImages = [
-  prefixLink('/img/cmyk/magenta1.png'),
-  prefixLink('/img/cmyk/magenta2.png'),
-  prefixLink('/img/cmyk/magenta3.png'),
-  prefixLink('/img/cmyk/magenta4.png')
+  prefixLink('/img/cmyk/Magenta1.png'),
+  prefixLink('/img/cmyk/Magenta2.png'),
+  prefixLink('/img/cmyk/Magenta3.png'),
+  prefixLink('/img/cmyk/Magenta4.png')
 ];
 
 const yellowImages = [
-  prefixLink('/img/cmyk/yellow1.png'),
-  prefixLink('/img/cmyk/yellow2.png'),
-  prefixLink('/img/cmyk/yellow3.png'),
-  prefixLink('/img/cmyk/yellow4.png')
+  prefixLink('/img/cmyk/Yellow1.png'),
+  prefixLink('/img/cmyk/Yellow2.png'),
+  prefixLink('/img/cmyk/Yellow3.png'),
+  prefixLink('/img/cmyk/Yellow4.png')
 ];
 
 const blackImages = [
