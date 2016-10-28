@@ -1,32 +1,76 @@
 .interactive-title {
+  @include vertical-align();
+  top: 40%;
+
   width: 90%;
+  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
   font-size: 0;
   line-height: 0;
 
-  .img__stack {
+  @media (max-width: 880px) {
+    width: 64%;
+    max-width: 640px;
+  }
+
+  .flip__container {
     display: inline-block;
     width: 22.5%;
     margin: 0 1%;
+    perspective: 1024px;
 
-    .img {
+    @media (max-width: 880px) {
+      width: 48%;
+      margin: 1%;
+    }
+
+    .flipper {
       width: 100%;
-      background: white;
-      transition: opacity 250ms;
+      transition: 250ms;
+      transition-delay: 15ms;
+      transform-style: preserve-3d;
 
-      &.img--absolute {
-        position: absolute;
-        top: 0;
-        left: 0;
+      &.flipper1 {
+        transition-delay: 15ms;
       }
 
-      &.img--hidden {
-        opacity: 0;
+      &.flipper2 {
+        transition-delay: 115ms;
       }
 
-      img {
+      &.flipper3 {
+        transition-delay: 215ms;
+      }
+
+      .img__container {
         width: 100%;
+        backface-visibility: hidden;
+        background: white;
+        box-shadow: 0 0 3px 3px lighten($c__black, 65);
+
+        img {
+          width: 100%;
+        }
+
+        &.front {
+          z-index: 2;
+          transform: rotateY(0deg);
+        }
+
+        &.back {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          transform: rotateY(180deg);
+        }
+      }
+    }
+
+    &.hover {
+      .flipper {
+        transform: rotateY(180deg); 
       }
     }
   }
