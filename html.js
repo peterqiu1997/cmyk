@@ -32,7 +32,7 @@ export default class Html extends Component {
           />
           <meta
             name="keywords"
-            content="innovative, design, innovative design, college, berkeley, design club, design organization, designation, cmyk, cal, cmyk designathon"
+            content="innovative, design, innovative design, college, berkeley, design club, design organization, designathon, cmyk, cal, cmyk designathon"
           />
           <meta
             property="og:image"
