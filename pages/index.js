@@ -238,7 +238,6 @@ export default class Index extends React.Component {
               smooth={true}
               duration={500}
               isDynamic={true}
-              offset={-64}
               onSetActive={() => {
                 this._handleSetActive('about');
               }}
@@ -253,7 +252,6 @@ export default class Index extends React.Component {
               smooth={true}
               duration={500}
               isDynamic={true}
-              offset={-64}
               onSetActive={() => {
                 this._handleSetActive('schedule');
               }}
@@ -268,7 +266,6 @@ export default class Index extends React.Component {
               smooth={true}
               duration={500}
               isDynamic={true}
-              offset={-64}
               onSetActive={() => {
                 this._handleSetActive('registration');
               }}
@@ -283,7 +280,6 @@ export default class Index extends React.Component {
               smooth={true}
               duration={500}
               isDynamic={true}
-              offset={-64}
               onSetActive={() => {
                 this._handleSetActive('competition');
               }}
