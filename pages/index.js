@@ -14,7 +14,7 @@ const speakers = [
     name: 'Ayan Daniels',
     url: '/img/speakers/ayan.jpg',
     portfolio: 'http://designayan.com/',
-    title: 'Interaction Design at Google'
+    title: 'Visual Designer at Google'
   },
   {
     name: 'Sahana Kumar',
