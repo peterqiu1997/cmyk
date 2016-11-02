@@ -42,7 +42,7 @@ const speakers = [
   },
   {
     name: 'Andre Tacuyan',
-    url: '/img/speakers/andre.jpg',
+    url: '/img/speakers/andre.png',
     portfolio: 'http://www.andretacuyan.com/',
     title: 'Design at Playground'
   },
