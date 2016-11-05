@@ -14,43 +14,50 @@ const speakers = [
     name: 'Ayan Daniels',
     url: '/img/speakers/ayan.jpg',
     portfolio: 'http://designayan.com/',
-    title: 'Visual Designer at Google'
+    title: 'Visual Designer at Google',
+    email: 'ayandaniels@gmail.com'
   },
   {
     name: 'Sahana Kumar',
     url: '/img/speakers/sahana.jpg',
     portfolio: 'http://sahanakumar.com/',
-    title: 'Interaction Design at Frog'
+    title: 'Interaction Design at Frog',
+    email: 'sahana@kumarfamily.us'
   },
   {
     name: 'Benjamin Zweig',
     url: '/img/speakers/benjamin.jpg',
     portfolio: 'http://zweig.co/',
-    title: 'Product Designer at Twitch'
+    title: 'Product Designer at Twitch',
+    email: 'ben@hi-lite.co'
   },
   {
     name: 'Travis Neilson',
     url: '/img/speakers/travis.jpeg',
     portfolio: 'http://travisneilson.com/',
-    title: 'Youtuber at DevTips & Interaction Designer at Google'
+    title: 'Youtuber at DevTips & Interaction Designer at Google',
+    email: 'travisneilson@gmail.com'
   },
   {
     name: 'Fiona Yeung',
     url: '/img/speakers/fiona.jpg',
     portfolio: 'http://www.fionayeung.com/',
-    title: 'Material Design at Google'
+    title: 'Material Design at Google',
+    email: 'hello@fionayeung.com'
   },
   {
     name: 'Andre Tacuyan',
     url: '/img/speakers/andre.png',
     portfolio: 'http://www.andretacuyan.com/',
-    title: 'Design at Playground'
+    title: 'Design at Playground',
+    email: 'andretacuyan@gmail.com'
   },
   {
     name: 'Anna Smalley',
     url: '/img/speakers/anna.jpg',
     portfolio: '',
-    title: 'Senior UX Director at Walmart Labs'
+    title: 'Senior UX Director at Walmart Labs',
+    email: 'ASmalley@walmartlabs.com'
   }
 ];
 
@@ -125,6 +132,9 @@ const speakerElements = _.map(speakers, (speaker, index) => {
           </div>
           <div className="speaker__details--title">
             { speaker.title }
+          </div>
+          <div className="speaker__details--email">
+            { speaker.email }
           </div>
         </div>
       </a>

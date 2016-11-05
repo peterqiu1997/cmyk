@@ -95,7 +95,14 @@
 
           .speaker__details--title {
             font-size: 1.25rem;
+            line-height: 1.75rem;
             margin-top: 0.4rem;
+          }
+
+          .speaker__details--email {
+            margin-top: 0.4rem;
+            font-size: 1rem;
+            font-style: italic;
           }
         }
       }
