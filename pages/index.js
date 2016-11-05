@@ -364,8 +364,32 @@ export default class Index extends React.Component {
             <div className="gob--logo">
               <img src={ prefixLink('/img/gob.png') }/>
             </div>
-            The prompt will be released here at the event!  See you there!
-
+            <div className="prompts">
+              <div className="prompt--title">1. PLAY EVERYWHERE</div>
+              <div className="prompt--description">
+                An all-inclusive marketing strategy that positions the store as (primarily) a community hangout
+                venue and (secondarily) a source for games and activities that can be enjoyed essentially
+                anywhere -- dorms, parties, parks, cars, beaches, bars, etc. This can be targeted specifically
+                toward college students, especially those who are new to the university and/or neighborhood.
+              </div>
+              <div className="prompt--title">2. HOLIDAY MARKETING</div>
+              <div className="prompt--description">
+                Games of Berkeley will be moving in January of 2017, but will operate both the current
+                and the new location from mid-November until mid-January, so we need a campaign that will
+                not only bring in new holiday shoppers, but educate them and our existing customers about
+                our new address going forward.
+              </div>
+              <div className="prompt--title">3. DRAGONS!!!</div>
+              <div className="prompt--description">
+                The roleplaying game Dungeons & Dragons is arguably the source of today's tabletop gaming
+                Renaissance. GoB's original logo incorporated a dragon, our current logo incorporates a
+                dragon, we have a few large 3D dragons that will be used for environmental design in the
+                new store location ... you get the picture. Design some apparel we could potentially sell
+                or give away as promotional items that uses images of dragons. Go wild with this one, use
+                dragons from different historical cultures around the world, or draw from modern iconography
+                or pop culture references.
+              </div>
+            </div>
             <a href="http://innovativedesign.club">
               <div className="innod--logo">
                 <img src={ prefixLink('/img/innod.png') }/>

@@ -229,8 +229,19 @@
 }
 
 .section--competition {
-  height: 100vh;
   text-align: center;
+
+  .section--sub {
+    .prompts {
+      text-align: center;
+
+      .prompt--title {
+        font-size: 1.25em;
+        font-weight: 700;
+        margin: 1.75rem 0;
+      }
+    }
+  }
 
   .gob--logo {
     padding: 2%;
