@@ -1,0 +1,55 @@
+.schedule__container {
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  background-color: #b8dec8; }
+  .schedule__container .schedule {
+    padding-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+    .schedule__container .schedule .weekend {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      color: white;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: calc( ( 100% - 3*20px) / 3); }
+      .schedule__container .schedule .weekend .date {
+        font-weight: initial;
+        font-size: 18px; }
+      .schedule__container .schedule .weekend .title {
+        font-weight: 600;
+        font-size: 24px; }
+        .schedule__container .schedule .weekend .title img {
+          display: inline;
+          height: 24px;
+          width: auto;
+          padding-right: 5px; }
+      .schedule__container .schedule .weekend ul {
+        padding-left: 0;
+        padding-right: 20px;
+        list-style: none;
+        margin-top: 20px; }
+        .schedule__container .schedule .weekend ul li {
+          font-size: 16px;
+          margin-bottom: 25px; }
+          .schedule__container .schedule .weekend ul li .time {
+            display: inline-block;
+            width: 40px;
+            text-align: left;
+            height: 100%;
+            vertical-align: top; }
+          .schedule__container .schedule .weekend ul li .description {
+            display: inline-block;
+            height: 100%;
+            width: calc(100% - 55px);
+            margin-left: 15px; }
+      @media (max-width: 796px) {
+        .schedule__container .schedule .weekend {
+          width: 100%;
+          display: block; } }
+    @media (max-width: 796px) {
+      .schedule__container .schedule {
+        padding-bottom: 100px; } }

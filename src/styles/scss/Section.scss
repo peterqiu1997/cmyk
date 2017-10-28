@@ -1,0 +1,11 @@
+@import "_variables.scss";
+@import "Landing.scss";
+@import "Description.scss";
+@import "Footer.scss";
+
+.section {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background-color: $green;
+}

@@ -1,0 +1,157 @@
+@keyframes slideDownFromTop {
+  from {
+    margin-top: -100%;
+    height: 300%; }
+  to {
+    margin-top: 0%;
+    height: 100%; } }
+
+.landing {
+  position: relative; }
+  .landing .title__container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    line-height: 1.4; }
+    .landing .title__container .subtitle {
+      padding-top: 10px; }
+    .landing .title__container .title--above {
+      animation-duration: 2s;
+      font-size: 22px;
+      color: white; }
+    .landing .title__container .title {
+      font-size: 72px;
+      font-weight: 800;
+      color: #EE4136; }
+      .landing .title__container .title .add {
+        color: white; }
+      .landing .title__container .title .top_text {
+        height: 80px;
+        overflow: hidden; }
+        .landing .title__container .title .top_text .top {
+          animation: slideDownFromTop 1.5s; }
+      .landing .title__container .title .bottom_text {
+        height: 80px;
+        overflow: hidden; }
+        .landing .title__container .title .bottom_text .bottom {
+          animation: slideDownFromTop 1.5s; }
+    .landing .title__container .subtitle {
+      font-size: 24px;
+      font-weight: 500;
+      color: white;
+      animation-delay: 1.5s; }
+    .landing .title__container .subtitle--dates {
+      font-size: 18px;
+      color: white;
+      animation-delay: 1.5s; }
+  .landing .description__link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    animation-delay: 1.5s; }
+    .landing .description__link img {
+      padding-top: 10px;
+      display: block;
+      height: auto;
+      width: 30px; }
+    .landing .description__link :hover {
+      cursor: pointer; }
+  .landing .logoImg {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    animation-delay: 2.0s;
+    z-index: 1000; }
+    .landing .logoImg img {
+      opacity: 0.8;
+      width: 40px;
+      height: auto; }
+  @media (max-width: 796px) {
+    .landing {
+      width: 100%; } }
+
+.description {
+  position: relative;
+  display: table; }
+  .description .description__container {
+    display: table-cell;
+    vertical-align: middle; }
+    .description .description__container .transit_line {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 4px; }
+      .description .description__container .transit_line.yellow {
+        width: 140px; }
+      .description .description__container .transit_line.turquoise {
+        width: 160px; }
+      .description .description__container .transit_line.red {
+        width: 180px; }
+      @media (max-width: 803px) {
+        .description .description__container .transit_line {
+          display: none; } }
+    .description .description__container .question {
+      padding-left: 20px;
+      line-height: 1.5;
+      color: white;
+      padding-bottom: 30px;
+      display: inline-block; }
+      .description .description__container .question.what {
+        width: calc(100% - 160px); }
+      .description .description__container .question.who {
+        width: calc(100% - 180px); }
+      .description .description__container .question.when_where {
+        width: calc(100% - 200px); }
+      .description .description__container .question .title {
+        font-weight: 600;
+        font-size: 24px;
+        color: white; }
+      @media (max-width: 803px) {
+        .description .description__container .question {
+          display: block;
+          width: 100%; }
+          .description .description__container .question.what {
+            width: 100%; }
+          .description .description__container .question.who {
+            width: 100%; }
+          .description .description__container .question.when_where {
+            width: 100%; } }
+
+.footer__container {
+  background-color: #b8dec8;
+  width: 100%;
+  height: 100%; }
+  .footer__container .footer {
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+  .footer__container .tickets {
+    margin-right: 45px; }
+  .footer__container .logo {
+    margin-left: 45px; }
+  .footer__container .tickets, .footer__container .logo {
+    display: inline-block;
+    line-height: 1.5; }
+    .footer__container .tickets .caption, .footer__container .logo .caption {
+      font-size: 24px;
+      font-weight: 600; }
+    .footer__container .tickets img, .footer__container .logo img {
+      height: 150px;
+      width: auto; }
+  @media (max-width: 796px) {
+    .footer__container .tickets, .footer__container .logo {
+      display: block;
+      margin: 0; }
+    .footer__container .logo {
+      padding-top: 45px; } }
+
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: #b8dec8; }

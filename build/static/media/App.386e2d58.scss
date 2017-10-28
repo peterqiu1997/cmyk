@@ -1,0 +1,46 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  
+  .plants {
+    position: fixed;
+    width: 15%;
+    min-width: 85px;
+    height: auto;
+    z-index: 100;
+    opacity: 0.8;
+
+    &.ferns {
+      opacity: 0.25;
+      max-width: 200px;
+    }
+
+    &.top_left {
+      top: 0;
+      left: 0;
+    }
+
+    &.top_right {
+      top: 0;
+      right: 0;
+      width: 20%;
+    }
+
+    &.bottom {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

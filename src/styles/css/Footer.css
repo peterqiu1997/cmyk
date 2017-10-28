@@ -1,0 +1,30 @@
+.footer__container {
+  background-color: #b8dec8;
+  width: 100%;
+  height: 100%; }
+  .footer__container .footer {
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+  .footer__container .tickets {
+    margin-right: 45px; }
+  .footer__container .logo {
+    margin-left: 45px; }
+  .footer__container .tickets, .footer__container .logo {
+    display: inline-block;
+    line-height: 1.5; }
+    .footer__container .tickets .caption, .footer__container .logo .caption {
+      font-size: 24px;
+      font-weight: 600; }
+    .footer__container .tickets img, .footer__container .logo img {
+      height: 150px;
+      width: auto; }
+  @media (max-width: 796px) {
+    .footer__container .tickets, .footer__container .logo {
+      display: block;
+      margin: 0; }
+    .footer__container .logo {
+      padding-top: 45px; } }

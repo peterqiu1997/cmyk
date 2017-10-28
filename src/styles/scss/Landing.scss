@@ -1,0 +1,105 @@
+@import "_variables.scss";
+
+@keyframes slideDownFromTop {
+    from {
+        margin-top: -100%;
+        height: 300%;
+    }
+    to {
+        margin-top: 0%;
+        height: 100%
+    }
+  }
+
+.landing {
+    position: relative;
+
+    .title__container {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        line-height: 1.4;
+
+        .subtitle { padding-top:10px; }
+        .title--above {
+            animation-duration: 2s;
+            font-size: 22px;
+            color: white;
+        }
+
+        .title {
+            font-size: 72px;
+            font-weight: 800;
+            color: $red;
+            .add { color: white; }
+            .top_text { 
+                height: 80px;
+                overflow: hidden;
+
+                .top { 
+                    animation: slideDownFromTop 1.5s; 
+                }
+            }
+            .bottom_text{
+                height: 80px;
+                overflow: hidden;
+
+                .bottom { 
+                    animation: slideDownFromTop 1.5s; 
+                }
+            }
+        }
+
+        .subtitle {
+            font-size: 24px;
+            font-weight: 500;
+            color: white;
+            animation-delay: 1.5s;
+        }
+
+        .subtitle--dates {
+            font-size: 18px;
+            color: white;
+            animation-delay: 1.5s;
+        }
+    }
+
+    .description__link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 25px;
+        animation-delay: 1.5s;
+
+        img {
+            padding-top: 10px;
+            display: block;
+            height: auto;
+            width: 30px;
+        }
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .logoImg {
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        animation-delay: 2.0s;
+        z-index: 1000;
+
+        img {
+            opacity: 0.8;
+            width: 40px; 
+            height: auto;
+        }
+    }
+
+    @media(max-width: 796px) {
+        width: 100%;
+    }
+}

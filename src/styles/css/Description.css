@@ -1,0 +1,45 @@
+.description {
+  position: relative;
+  display: table; }
+  .description .description__container {
+    display: table-cell;
+    vertical-align: middle; }
+    .description .description__container .transit_line {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 4px; }
+      .description .description__container .transit_line.yellow {
+        width: 140px; }
+      .description .description__container .transit_line.turquoise {
+        width: 160px; }
+      .description .description__container .transit_line.red {
+        width: 180px; }
+      @media (max-width: 803px) {
+        .description .description__container .transit_line {
+          display: none; } }
+    .description .description__container .question {
+      padding-left: 20px;
+      line-height: 1.5;
+      color: white;
+      padding-bottom: 30px;
+      display: inline-block; }
+      .description .description__container .question.what {
+        width: calc(100% - 160px); }
+      .description .description__container .question.who {
+        width: calc(100% - 180px); }
+      .description .description__container .question.when_where {
+        width: calc(100% - 200px); }
+      .description .description__container .question .title {
+        font-weight: 600;
+        font-size: 24px;
+        color: white; }
+      @media (max-width: 803px) {
+        .description .description__container .question {
+          display: block;
+          width: 100%; }
+          .description .description__container .question.what {
+            width: 100%; }
+          .description .description__container .question.who {
+            width: 100%; }
+          .description .description__container .question.when_where {
+            width: 100%; } }
